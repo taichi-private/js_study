@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #ff0000;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-list li {
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #fff;
+}
+.section1 {
+    width: 100%;
+    height: 50px;
+    background-color: #0ff00f;
+}
+.section2 {
+    width: 100%;
+    height: 50px;
+    background-color: #0ff6f0;
+}
+.section3 {
+    width: 100%;
+    height: 50px;
+    background-color: #f0f000;
+}
+.section4 {
+    width: 100%;
+    height: 50px;
+    background-color: #0f0;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #ef44ef;
+}

@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<title>LP</title>
+</head>
+<body>
+  <p>ここではjavascriptで"こんにちわ、世界"を作成します</p>
+  <script type="text/javascript">
+    window.alert('こんにちわ、世界');
+    window.alert('こんにちわ、世界\nここから改行\nこれはエスケープ処理です');
+    var msg = 'test';
+    var msg = 'test2';
+    //var宣言では上書きできる。(同じ変数を定義できる)
+    console.log(msg);
+
+    let hello = 'hello';
+    //let宣言では同じ変数を使えない。(上書きができない)
+    console.log(hello);
+
+    //constは定数。わかりやすいように全て大文字、単語をアンダースコアで区切る
+    const TAX = 100;
+    console.log(TAX);
+  </script>
+  <a href="JavaScript:window.alert('こんにちわ');">押して</a>
+  <p>memo:<br>
+    変数・関数名　→　camelCase記法(例:lastName) <br>
+    定数名 → アンダースコア記法(例:last_name)<br>
+    クラス(コンストラクター)名 → pascal記法(例:LastName)
+  </p>
+  <noscript>javascriptが利用できません</noscript> 
+</body>
+</html>
