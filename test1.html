@@ -39,6 +39,24 @@
     var data3 = {x:1, y:2, z: 3};
     console.log(data3.x);
     console.log(data3['y']);
+
+    var today = new Date();
+    console.log(1234 + today);
+
+    console.log(10 + 1);
+    console.log('10' + 1);
+
+    var x = 3;
+    var y = x++;
+    console.log(x); //出力結果は4
+    console.log(y); //出力結果は3
+    // yにxを代入してからxを加算している(インクリメントしている)
+
+    var x = 3;
+    var y = ++x;
+    console.log(x); //出力結果は4
+    console.log(y); //出力結果は4
+    // xを加算して(インクリメントして)からyにxを代入している
   </script>
   <a href="JavaScript:window.alert('こんにちわ');">押して</a>
   <h1>:memo</h1>
