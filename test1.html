@@ -123,6 +123,26 @@
         console.log("rank2はaかbかcではないです。");
         break;
     }
+    //switchは===演算子で比較するので注意が必要。let x = "0"でcase 0とやると実行されない
+
+    //while - 繰り返し構文
+    let while_x = 5;
+    while(while_x < 10) {
+      console.log('xの値は' + while_x + 'です。');
+      while_x++;
+    }
+
+    //do...while
+    let while_x2 = 5;
+    do {
+      console.log('xの値は' + while_x2 + 'です。(do...while文です)');
+      while_x2++;
+    } while(while_x2 < 10);
+
+    //while文とdo...while文に10を入れるとwhile文は何も表示されないが、do...while文は10が一回だけ表示される
+    //while文・・・前置判断→条件によっては一度も実行されない
+    //do...while・・・後置判断→条件に関わらず、最低1回は実行される
+
   </script>
   <a href="JavaScript:window.alert('こんにちわ');">押して</a>
   <h1>:memo</h1>
