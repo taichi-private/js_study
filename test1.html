@@ -57,6 +57,72 @@
     console.log(x); //出力結果は4
     console.log(y); //出力結果は4
     // xを加算して(インクリメントして)からyにxを代入している
+
+    console.log("分割代入");
+    //分割代入
+    let test_data = [50, 51, 52, 53, 54, 55, 56, 57, 58, 59];
+    let [x0, x1, x2, x3, x4, x5, x6, x7] = test_data;
+    console.log(x0);
+    console.log(x1);
+    console.log(x2);
+    console.log(x3);
+    console.log(x4);
+
+
+    let test_data2 = [60, 61, 62, 63, 64, 65, 66, 67, 68, 69];
+    let [z0, z1, z2, z3, ...other] = test_data2;
+    console.log(z0);
+    console.log(z1);
+    console.log(z2);
+    console.log(z3);
+    console.log(other);
+
+
+    let book = {title: "javascriptの本", publish: "技術評論社", price: 2800};
+    console.log(book.title);
+    let {price, title, memo = "なし"} = book;
+    console.log(title);
+    console.log(memo);
+
+    let book2 = {title2: "javascriptの本", publish2: "技術評論社", price2: 2800, other: {keywd: "java se 8", logo: "logo.png"}};
+    console.log(book2.other.logo);
+    let {title2, price2, other: {keywd}} = book2;
+
+    let book3 = {title3: "javascriptの本3", publish3: "技術評論社3"};
+    let {title3: name3, publish3: company3} = book3;
+    console.log(name3);
+    console.log(company3);
+
+    //switch文です。
+    //defaultはcaseが一致しない場合に表示させるためのものなので省略するのはよろしくない。
+    //break;は現在のブロックから処理を脱出するための命令です。breakがないと処理を移動するだけで自動的に処理を終了するわけではない。
+    //よってbreakがないとブロックが続けて実行されるだけです。
+    let rank = 'A';
+    switch(rank) {
+      case 'A' :
+        console.log("rankはAです。");
+        break;
+      case 'B' :
+        console.log("rankはBです。");
+        break;
+      case 'C' :
+        console.log("rankはCです。");
+        break;
+      default :
+        console.log("該当しません。");
+    }
+    //a,b,cはokという書き方の場合は以下の書き方でもよい
+    let rank2 = 'a';
+    switch(rank2) {
+      case 'a' :
+      case 'b' :
+      case 'c' :
+        console.log("rank2はaかbかcです。");
+        break;
+      default :
+        console.log("rank2はaかbかcではないです。");
+        break;
+    }
   </script>
   <a href="JavaScript:window.alert('こんにちわ');">押して</a>
   <h1>:memo</h1>
