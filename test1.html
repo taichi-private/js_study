@@ -142,7 +142,13 @@
     //while文とdo...while文に10を入れるとwhile文は何も表示されないが、do...while文は10が一回だけ表示される
     //while文・・・前置判断→条件によっては一度も実行されない
     //do...while・・・後置判断→条件に関わらず、最低1回は実行される
+    //while_x++;などを消して実行すると値が更新されず永遠にループする。これを無限ループという。
 
+    //for文
+    // for (初期化式; ループ継続条件式; 増減式) {} 
+    for (let for_x = 1; for_x < 10; for_x++) {
+      console.log(for_x + "です");
+    }   
   </script>
   <a href="JavaScript:window.alert('こんにちわ');">押して</a>
   <h1>:memo</h1>
